@@ -1,0 +1,97 @@
+ls (list) : used to list the contents in current directory
+
+ls -a : used to list all files in your home directory including those whose names begin with a dot.
+
+mkdir (make directory): used to make direcotry.
+
+cd (change directory): used to change the current working direcotry.
+
+cd .  : (.) as the name of the current directory.
+
+cd .. : (..) means the parent of the current directory.
+
+pwd (print working directory) :full pathname.
+
+
+cp file1 file2:	copy file1 and call it file2
+
+mv file1 file2 : move or rename file1 to file2
+
+rm file : remove a file
+
+rmdir directory : remove a directory
+
+cat file : display a file content
+
+more file : display a file content a page at a time
+
+head file : display the first few lines of a file
+
+tail file : display the last few lines of a file
+
+grep 'keyword' file : search a file for keywords
+
+wc file : count number of lines/words/characters in file
+
+> wc -w science.txt :returns no. of words
+
+> wc -l science.txt : returns no. of lines
+
+cat > list1 : in this the list1 label is userdefined after enternig this command then we need write some content and after that need to  enter CTRL + D after this if you enter command cat list1 then it returns then contents.
+
+cat >> list1: it is used to append the data in list1.
+
+cat list1 list2 > biglist: in this cat command concate the content of list1 and list2 in to biglist.
+
+sort : used  to sort list alphabetically or numerically.
+
+who : To see who is on the system with you.
+
+Wildcards
+	> ls list* : This will list all files in the current directory starting with list.... 
+	> ls *list : This will list all files in the current directory ending with ....list	
+	> ls ?list :  So ls ?ouse will match files like house and mouse, but not grouse. 
+
+
+ls -l: this will return all file and directory inside current directory with its details like size, access permission and date etc
+
+Access rights on files:
+	
+    r (or -), indicates read permission 
+    w (or -), indicates write permission 
+    x (or -), indicates execution permission 
+
+Access rights on directories:
+	
+    r allows users to list files in the directory;
+    w means that users may delete files from the directory or move files into it;
+    x means the right to access files in the directory. 
+
+chmod go-rwx biglist : to remove read write and execute permissions on the file biglist
+
+chmod a+rw biglist :To give read and write permissions on the file biglist to all
+
+ps : To see information about your processes, with their associated PID and status, type.
+
+sleep 10:This will wait 10 seconds before returning the command prompt %. Until the command prompt is returned, you can do nothing except wait. 
+
+
+sleep 10 &: The & runs the job in the background and returns the prompt straight away, allowing you do run other programs while waiting for that one to finish. 
+	>o/p : [1] 8870 it return job number and pid(process id).
+
+
+Kill Process:
+% sleep 100 : this process will execute after 100 sec. if you want to kill such process enter CTRL+C.
+
+kill %4 : this will kill job 4.
+
+
+df: returns the how much space is left on fileserver
+
+du : returns no. of kilobytes used by each subdirectory
+
+
+
+
+
+
